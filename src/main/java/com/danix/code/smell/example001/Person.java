@@ -20,6 +20,13 @@ public class Person extends Customer {
             } else {
                 account.substract(Money.newInstance(money.getAmount(), money.getCurrency()));
             }
+        } else {
+            if (account.isOverdraft()) {
+                account.substract(Money.newInstance(money.getAmount() + money.getAmount() * account.overdraftFee(),
+                        money.getCurrency()));
+            } else {
+                account.substract(Money.newInstance(money.getAmount(), money.getCurrency()));
+            }
         }
     }
 
