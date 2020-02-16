@@ -6,16 +6,6 @@
     <groupId>code-smell</groupId>
     <artifactId>code-smell</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-          <properties>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<!-- Organization and project keys are displayed in the right sidebar of the project homepage -->
-		<sonar.organization>politechnika</sonar.organization>
-		<sonar.projectKey>codesmell4</sonar.projectKey>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<jdk.version>1.8</jdk.version>
-		<junit.version>4.12</junit.version>
-	</properties>
     <dependencies>
         <dependency>
             <groupId>com.google.guava</groupId>
